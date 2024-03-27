@@ -1,0 +1,117 @@
+@keyframes bounce {
+0%, 20%, 60%, 100%{
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+    }
+    80%{
+      -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+    }
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+body{
+  background-color: black;
+}
+ 
+main{
+display: flex;
+margin: 0 25%;
+}
+
+.menu {
+  background-color: rgb(61, 0, 34);
+  color: brown;
+  font-family: fantasy;
+  font-size: large;
+  border-bottom: solid 4px rgb(211, 94, 94);
+}
+.menu button{
+  font-family: fantasy;
+  font-size: 16px;
+  padding: 20px;
+  line-height: 5px;
+  border-radius: 15px;
+  position: relative;
+  box-sizing: border-box;
+  transition: 400ms ease;
+  background-color: rgb(201, 90, 90);
+  animation: bounce 10s;
+}
+.menu button:hover{
+  color: rgb(165, 4, 138);
+}
+.menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu img {
+  width: 150px;
+  right: 200px;
+}
+#tuffs {
+  width: 100px;
+}
+.item {
+display: grid;
+}
+#cardapio img {
+margin-left: 37%;
+}
+.itens-cardapio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0%;
+}
+.itens-cardapio img {
+  width: 400px;
+  right: 450px;
+}
+.redes-sociais{
+  display: flex;
+  grid-gap: 25px;
+}
+.redes-sociais a i {
+  display: inline-flex;
+  padding: 5px;
+  color: blueviolet;
+}
+
+@media (max-width: 700px){
+  h1{
+      color:red;
+  }
+  .itens-cardapio {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  header ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      font-size: large;
+  }
+}
+.rodape {
+    margin-top: 3%;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: brown;
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(253, 207, 139);
+    border-top: solid 4px rgb(211, 94, 94);
+}
